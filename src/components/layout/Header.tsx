@@ -1,30 +1,21 @@
 import * as React from 'react';
+import { FiGithub, FiLinkedin } from 'react-icons/fi';
 
-import UnstyledLink from '@/components/links/UnstyledLink';
-
-const links = [
-  { href: '/', label: 'Route 1' },
-  { href: '/', label: 'Route 2' },
-];
+import UnstyledLink from '@/components/links/unstyledLink';
 
 export default function Header() {
   return (
-    <header className='sticky top-0 z-50 bg-white'>
-      <div className='flex items-center justify-between h-14 layout'>
-        <UnstyledLink href='/' className='font-bold hover:text-gray-600'>
-          Home
+    <header className='absolute z-50 w-full'>
+      <div className='flex justify-end p-10'>
+        <UnstyledLink
+          href='https://www.linkedin.com/in/daivyvandegraaf'
+          className='px-2'
+        >
+          <FiLinkedin className='text-3xl cursor-pointer icon dark:text-white dark:hover:text-purple-600'></FiLinkedin>
         </UnstyledLink>
-        <nav>
-          <ul className='flex items-center justify-between space-x-4'>
-            {links.map(({ href, label }) => (
-              <li key={`${href}${label}`}>
-                <UnstyledLink href={href} className='hover:text-gray-600'>
-                  {label}
-                </UnstyledLink>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <UnstyledLink href='https://github.com/daivy' className='px-2'>
+          <FiGithub className='text-3xl cursor-pointer icon dark:text-white dark:hover:text-purple-600'></FiGithub>
+        </UnstyledLink>
       </div>
     </header>
   );

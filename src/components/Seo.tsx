@@ -4,12 +4,11 @@ import { useRouter } from 'next/router';
 import { openGraph } from '@/lib/helper';
 
 const defaultMeta = {
-  title: 'Next.js + Tailwind CSS + TypeScript Starter',
-  siteName: 'Next.js + Tailwind CSS + TypeScript Starter',
-  description:
-    ' A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky',
-  url: 'https://tsnext-tw.thcl.dev',
-  image: 'https://theodorusclarence.com/favicon/large-og.jpg',
+  title: 'Daivy van de Graaf',
+  siteName: 'Daivy van de Graaf',
+  description: ' Portfolio Daivy van de Graaf',
+  url: 'https://daivy.dev',
+  image: 'https://daivy.dev/favicon/large-og.jpg',
   type: 'website',
   robots: 'follow, index',
 };

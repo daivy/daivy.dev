@@ -2,7 +2,7 @@ import clsx from 'clsx';
 
 import UnstyledLink, {
   UnstyledLinkProps,
-} from '@/components/links/UnstyledLink';
+} from '@/components/links/unstyledLink';
 
 enum ButtonVariant {
   'dark',

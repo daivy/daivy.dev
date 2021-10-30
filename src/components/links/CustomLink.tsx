@@ -2,9 +2,9 @@ import clsx from 'clsx';
 
 import UnstyledLink, {
   UnstyledLinkProps,
-} from '@/components/links/UnstyledLink';
+} from '@/components/links/unstyledLink';
 
-export default function CustomLink({
+export default function Link({
   children,
   className = '',
   ...rest
@@ -13,9 +13,7 @@ export default function CustomLink({
     <UnstyledLink
       {...rest}
       className={clsx(
-        'custom-link inline-flex items-center font-bold animated-underline',
-        'focus:outline-none focus-visible:ring ring-primary-400/70',
-        'border-b border-dotted border-dark hover:border-black/0',
+        'inline-flex items-center font-bold dark:text-white dark:hover:text-purple-600',
         className
       )}
     >

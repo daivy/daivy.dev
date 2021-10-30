@@ -1,13 +1,13 @@
 import clsx from 'clsx';
 import * as React from 'react';
 
-import Button from '@/components/buttons/Button';
-import Layout from '@/components/layout/Layout';
-import ButtonLink from '@/components/links/ButtonLink';
-import CustomLink from '@/components/links/CustomLink';
-import UnstyledLink from '@/components/links/UnstyledLink';
-import NextImage from '@/components/NextImage';
-import Seo from '@/components/Seo';
+import Button from '@/components/buttons/button';
+import Layout from '@/components/layout/layout';
+import ButtonLink from '@/components/links/buttonLink';
+import CustomLink from '@/components/links/customLink';
+import UnstyledLink from '@/components/links/unstyledLink';
+import NextImage from '@/components/nextImage';
+import Seo from '@/components/seo';
 
 export default function ComponentsPage() {
   const [mode, setMode] = React.useState('dark');
